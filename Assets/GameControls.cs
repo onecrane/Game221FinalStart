@@ -47,6 +47,10 @@ public class GameControls : MonoBehaviour {
 
     private void RemoveCapturedStones()
     {
-        // TODO: Fill out this function
+        // TODO: Fill out this function.
+        // Any stones that are now surrounded because of the placement of the new stone
+        // should be removed.
+        
+        // You do NOT need to worry about scoring - just remove any stones that are captured.
     }
 }

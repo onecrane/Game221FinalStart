@@ -339,7 +339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackMoku: {fileID: 1489043580600908, guid: b6b0f7fbfc0410342a1f81c3b39d537b, type: 2}
   whiteMoku: {fileID: 1194683951712928, guid: 90fcae5bfc551ae4b8136034afd00989, type: 2}
-  isBlacksTurn: 1
+  isBlacksTurn: 0
 --- !u!1001 &392906509
 Prefab:
   m_ObjectHideFlags: 0
