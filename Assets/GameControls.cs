@@ -47,10 +47,33 @@ public class GameControls : MonoBehaviour {
                 RemoveCapturedStones();
                 print("Removal in " + (DateTime.Now - removalStart).TotalMilliseconds + " ms");
 
-                isBlacksTurn = !isBlacksTurn;
+                if (IsSuicide(p))
+                {
+                    Destroy(newMoku);
+                    (isBlacksTurn ? blackMoku : whiteMoku).Remove(p);
+                }
+                else
+                {
+                    isBlacksTurn = !isBlacksTurn;
+                }
+
             }
         }
 	}
+
+    bool IsSuicide(Vector2Int pos)
+    {
+        Dictionary<Vector2Int, GameObject> opponentMoku = new Dictionary<Vector2Int, GameObject>(), source = (isBlacksTurn ? blackMoku : whiteMoku);
+        foreach (Vector2Int p in source.Keys) opponentMoku.Add(p, source[p]);
+
+        MokuGroup group = new MokuGroup(opponentMoku, pos);
+
+        bool groupCanBreathe = false;
+        foreach (GameObject moku in group.mokuInGroup.Values) if (MokuCanBreathe(moku)) groupCanBreathe = true;
+
+        return !groupCanBreathe;
+
+    }
 
     private void RemoveCapturedStones()
     {
