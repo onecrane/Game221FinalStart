@@ -153,10 +153,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8c43b7ffbcaac84b91d19352fb8b925, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blackMoku: {fileID: 1489043580600908, guid: b6b0f7fbfc0410342a1f81c3b39d537b, type: 2}
-  whiteMoku: {fileID: 1194683951712928, guid: 90fcae5bfc551ae4b8136034afd00989, type: 2}
-  topLeft: {fileID: 776531135}
-  bottomRight: {fileID: 1756768162}
+  blackMokuTemplate: {fileID: 1489043580600908, guid: b6b0f7fbfc0410342a1f81c3b39d537b,
+    type: 2}
+  whiteMokuTemplate: {fileID: 1194683951712928, guid: 90fcae5bfc551ae4b8136034afd00989,
+    type: 2}
   isBlacksTurn: 1
 --- !u!1 &482024833
 GameObject:
