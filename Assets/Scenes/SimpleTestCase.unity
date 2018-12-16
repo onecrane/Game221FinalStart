@@ -337,8 +337,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8c43b7ffbcaac84b91d19352fb8b925, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blackMoku: {fileID: 1489043580600908, guid: b6b0f7fbfc0410342a1f81c3b39d537b, type: 2}
-  whiteMoku: {fileID: 1194683951712928, guid: 90fcae5bfc551ae4b8136034afd00989, type: 2}
+  blackMokuTemplate: {fileID: 1489043580600908, guid: b6b0f7fbfc0410342a1f81c3b39d537b,
+    type: 2}
+  whiteMokuTemplate: {fileID: 1194683951712928, guid: 90fcae5bfc551ae4b8136034afd00989,
+    type: 2}
   isBlacksTurn: 0
 --- !u!1001 &397491368
 Prefab:
@@ -1499,52 +1501,6 @@ Prefab:
     - target: {fileID: 1194683951712928, guid: 90fcae5bfc551ae4b8136034afd00989, type: 2}
       propertyPath: m_Name
       value: White Moku (23)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 90fcae5bfc551ae4b8136034afd00989, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1001 &1587862154
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4693181938368602, guid: 90fcae5bfc551ae4b8136034afd00989, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 4693181938368602, guid: 90fcae5bfc551ae4b8136034afd00989, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4693181938368602, guid: 90fcae5bfc551ae4b8136034afd00989, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4693181938368602, guid: 90fcae5bfc551ae4b8136034afd00989, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0.70710677
-      objectReference: {fileID: 0}
-    - target: {fileID: 4693181938368602, guid: 90fcae5bfc551ae4b8136034afd00989, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4693181938368602, guid: 90fcae5bfc551ae4b8136034afd00989, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4693181938368602, guid: 90fcae5bfc551ae4b8136034afd00989, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4693181938368602, guid: 90fcae5bfc551ae4b8136034afd00989, type: 2}
-      propertyPath: m_RootOrder
-      value: 33
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194683951712928, guid: 90fcae5bfc551ae4b8136034afd00989, type: 2}
-      propertyPath: m_Name
-      value: White Moku (25)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90fcae5bfc551ae4b8136034afd00989, type: 2}
