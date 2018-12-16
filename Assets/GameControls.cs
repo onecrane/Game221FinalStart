@@ -39,7 +39,9 @@ public class GameControls : MonoBehaviour {
 
                 stones[bx, by] = newMoku;
 
+                DateTime start = DateTime.Now;
                 RemoveCapturedStones();
+                print("Removal in " + (DateTime.Now - start).TotalMilliseconds + " ms");
 
                 isBlacksTurn = !isBlacksTurn;
             }
